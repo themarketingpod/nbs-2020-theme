@@ -1,0 +1,18 @@
+.row-grid {
+  display: grid;
+}
+
+.is-grid-2-col {
+  grid-template-columns: 1fr 1fr;
+}
+
+// Cols
+.grid-2-cols-col-1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.grid-2-cols-col-2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}

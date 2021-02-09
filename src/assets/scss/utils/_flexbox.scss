@@ -1,0 +1,35 @@
+.is-flex {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+}
+
+.is-flex-inline {
+  display: inline-flex;
+}
+
+// Flex Direction
+.is-flex-column {
+  flex-direction: column;
+}
+
+// Flex Wrap
+.flex-wrap,
+.is-flex-wrap {
+  flex-wrap: wrap;
+}
+
+// Align-items
+.align-items-center {
+  align-items: center;
+}
+
+
+// Justify Content
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-flex-end {
+  justify-content: flex-end;
+}

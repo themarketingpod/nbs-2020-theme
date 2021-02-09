@@ -20,10 +20,15 @@
     "autoprefixer": "postcss src/css/**/*.css src/modules/**/*.css !src/**/_layout.css !src/**/_normalize.css !src/**/_reset.css !src/**/_macros.css !src/**/main.css !src/**/theme-overrides.css --use autoprefixer --replace --no-map",
     "eslint": "eslint src",
     "lint": "eslint src && prettier --list-different 'src/**/*.js' 'src/**/*.json'",
-    "prettier:write": "prettier --write 'src/**/*.js' 'src/**/*.json'"
+    "prettier:write": "prettier --write 'src/**/*.js' 'src/**/*.json'",
+    "watch:scss": "node-sass --watch --source-map true --source-map-contents-true --precision 6 src/assets/scss -o src/assets/css",
+    "build:scss": "node-sass --output-style compressed src/assets/scss/theme.scss src/assets/css/theme.min.css"
   },
   "browserslist": [
     "defaults",
     "IE 11"
-  ]
+  ],
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
 }

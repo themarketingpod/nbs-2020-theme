@@ -1,0 +1,50 @@
+.site-header {
+  padding: $spacer-medium 0;
+  &__branding {
+    max-width: 300px;
+
+    img {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+
+    @include breakpoint(medium) {
+      margin-right: auto;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    width: 100%;
+    margin-top: $spacer-small;
+
+    @include breakpoint(medium) {
+      display: inline-flex;
+      width: 50%;
+    }
+
+    span {
+      display: none;
+    }
+
+    .button {
+      width: 48%;
+      max-width: 48%;
+      // margin: 0;
+
+      &:nth-child(2) {
+        margin-right:auto;
+
+        @include breakpoint(large) {
+          margin-right: $spacer-small;
+        }
+      }
+
+      @include breakpoint(large) {
+        width: auto;
+      }
+    }
+  }
+}

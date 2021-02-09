@@ -1,0 +1,8 @@
+a {
+  color: $theme-green;
+  text-decoration: none;
+
+  &:hover {
+    color: $theme-orange;
+  }
+}
