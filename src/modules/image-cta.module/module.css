@@ -1,0 +1,16 @@
+.image-cta {
+  /* padding: 0 10px; */
+}
+
+.image-cta h3 {
+  margin-bottom: 20px;
+}
+
+.image-cta img {
+  width: 100%;
+}
+
+.image-cta .btn {
+  width: 100%;
+  text-align: center;
+}

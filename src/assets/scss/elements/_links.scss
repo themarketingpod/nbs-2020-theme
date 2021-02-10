@@ -1,0 +1,10 @@
+a {
+  color: $theme-green;
+  font-family: $body-font !important;
+  text-decoration: none;
+
+  &:hover {
+    color: $theme-orange;
+    text-decoration: none;
+  }
+}

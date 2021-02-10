@@ -1,0 +1,29 @@
+.alert {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: $spacer-small $spacer-medium;
+  background-color: $colour-grey-lightest;
+  border: solid 1px $colour-grey-light;
+  border-radius: 0.4rem;
+
+  p {
+    margin: 0;
+  }
+
+  &.is-message {
+    color: $colour-white;
+    background-color: $theme-blue;
+    border-color: darken($theme-blue, 10);
+  }
+
+  &.is-error {
+    color: $colour-white;
+    background-color: $theme-red;
+    border-color: darken($theme-red, 10);
+
+    a {
+      color: darken($theme-red, 50);
+    }
+  }
+}

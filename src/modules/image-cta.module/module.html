@@ -1,0 +1,26 @@
+<div class="image-cta">
+  <p>&nbsp;</p>
+  <h3>{% inline_text field="cta_title" value="{{ module.cta_title }}" no_wrapper="true" %}</h3>
+  <p style="text-align: center;">
+    <img src="{{ module.cta_image.src }}" alt="{{ module.cta_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+  </p>
+  <p>
+    {% set href = module.button_link.url.href %}
+    {% if module.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+      {% set href = "mailto:" + href %}
+    {% endif %}
+    {% set rel = [] %}
+    {% if module.button_link.no_follow %}
+      {% do rel.append("nofollow") %}
+    {% endif %}
+    {% if module.button_link.open_in_new_tab %}
+      {% do rel.append("noopener") %}
+    {% endif %}
+    <a class="btn btn--blue" "href="{{ href }}"
+      {% if module.button_link.open_in_new_tab %}target="_blank"{% endif %}
+      {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+      >
+      {% inline_text field="button_text" value="{{ module.button_text }}" no_wrapper="true" %}
+    </a>
+  </p>
+  </div>

@@ -1,0 +1,9 @@
+.wrapper {
+  padding: $spacer-xlarge 0;
+  
+  &--home {
+    .container {
+      min-height: 100vh;
+    }
+  }
+}

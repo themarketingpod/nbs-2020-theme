@@ -1,0 +1,54 @@
+
+$grid-columns: $base-layout-columns;
+$grid-columns-gutter: $base-layout-gutter;
+
+.col {
+  fLex: 0 0 100%;
+  max-width: 100%;
+  padding-left: $grid-columns-gutter / 2;
+  padding-right: $grid-columns-gutter / 2;
+  min-height: 1px;
+}
+
+@include breakpoint(small) {
+
+  @for $i from 1 through $grid-columns {     
+      .col--#{$i}-small {   
+          flex: 0 0 100% / $grid-columns * $i;
+          max-width: 100% / $grid-columns * $i; 
+      } 
+  }
+}
+
+@include breakpoint(medium) {
+
+  @for $i from 1 through $grid-columns {     
+      .col--#{$i}-medium {   
+          flex: 0 0 100% / $grid-columns * $i;
+          max-width: 100% / $grid-columns * $i; 
+      } 
+  }
+}
+
+@include breakpoint(large) {
+    
+  @for $i from 1 through $grid-columns {     
+      .col--#{$i}-large {      
+          flex: 0 0 100% / $grid-columns * $i;
+          max-width: 100% / $grid-columns * $i; 
+      } 
+    
+  }
+ 
+}
+
+@include breakpoint(xlarge) {
+    
+  @for $i from 1 through $grid-columns {     
+      .col--#{$i}-xlarge {      
+          flex: 0 0 100% / $grid-columns * $i;
+          max-width: 100% / $grid-columns * $i; 
+      } 
+  }
+ 
+}

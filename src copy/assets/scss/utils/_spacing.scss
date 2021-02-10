@@ -1,0 +1,411 @@
+// --------------------------------- \\
+// margin
+// --------------------------------- \\
+
+.margin-none {
+  margin: 0;
+}
+
+.margin-xsmall {
+  margin: $spacer-xsmall;
+}
+
+.margin-small {
+  margin: $spacer-small;
+}
+
+.margin-medium {
+  margin: $spacer-medium;
+}
+
+.margin-large {
+  margin: $spacer-large;
+}
+
+.margin-xlarge {
+  margin: $spacer-xlarge;
+}
+
+.margin-xxlarge {
+  margin: $spacer-xxlarge;
+}
+
+
+// --------------------------------------- \\
+// margin Y
+// --------------------------------------- \\
+.margin-x-xsmall {
+  margin-left: $spacer-xsmall;
+  margin-right: $spacer-xsmall;
+}
+
+.margin-x-small {
+  margin-left: $spacer-small;
+  margin-right: $spacer-small;
+}
+
+.margin-x-medium {
+  margin-left: $spacer-medium;
+  margin-right: $spacer-medium;
+}
+
+.margin-x-large {
+  margin-left: $spacer-large;
+  margin-right: $spacer-large;
+}
+
+.margin-x-xlarge {
+  margin-left: $spacer-xlarge;
+  margin-right: $spacer-xlarge;
+}
+
+.margin-x-xxlarge {
+  margin-left: $spacer-xxlarge;
+  margin-right: $spacer-xxlarge;
+}
+// --------------------------------------- \\
+// margin Y
+// --------------------------------------- \\
+.margin-y-xsmall {
+  margin-top: $spacer-xsmall;
+  margin-bottom: $spacer-xsmall;
+}
+
+.margin-y-small {
+  margin-top: $spacer-small;
+  margin-bottom: $spacer-small;
+}
+
+.margin-y-medium {
+  margin-top: $spacer-medium;
+  margin-bottom: $spacer-medium;
+}
+
+.margin-y-large {
+  margin-top: $spacer-large;
+  margin-bottom: $spacer-large;
+}
+
+.margin-y-xlarge {
+  margin-top: $spacer-xlarge;
+  margin-bottom: $spacer-xlarge;
+}
+
+.margin-y-xxlarge {
+  margin-top: $spacer-xxlarge;
+  margin-bottom: $spacer-xxlarge;
+}
+// --------------------------------------- \\
+// margin Top
+// --------------------------------------- \\
+
+.margin-top-none {
+  margin-top: 0;
+}
+
+.margin-top-xsmall {
+  margin-top: $spacer-xsmall;
+}
+
+.margin-top-small {
+  margin-top: $spacer-small;
+}
+
+.margin-top-medium {
+  margin-top: $spacer-medium;
+}
+
+.margin-top-large {
+  margin-top: $spacer-large;
+}
+
+.margin-top-xlarge {
+  margin-top: $spacer-xlarge;
+}
+
+.margin-top-xxlarge {
+  margin-top: $spacer-xxlarge;
+}
+// --------------------------------------- \\
+// margin Bottom
+// --------------------------------------- \\
+.margin-bottom-xsmall {
+  margin-bottom: $spacer-xsmall;
+}
+
+.margin-bottom-small {
+  margin-bottom: $spacer-small;
+}
+
+.margin-bottom-medium {
+  margin-bottom: $spacer-medium;
+}
+
+.margin-bottom-large {
+  margin-bottom: $spacer-large;
+}
+
+.margin-bottom-xlarge {
+  margin-bottom: $spacer-xlarge;
+}
+
+.margin-bottom-xxlarge {
+  margin-bottom: $spacer-xxlarge;
+}
+// --------------------------------------- \\
+// margin Left
+// --------------------------------------- \\
+.margin-left-xsmall {
+  margin-bottom: $spacer-xsmall;
+}
+
+.margin-left-small {
+  margin-bottom: $spacer-small;
+}
+
+.margin-left-medium {
+  margin-bottom: $spacer-medium;
+}
+
+.margin-left-large {
+  margin-bottom: $spacer-large;
+}
+
+.margin-left-xlarge {
+  margin-bottom: $spacer-xlarge;
+}
+
+.margin-left-xxlarge {
+  margin-bottom: $spacer-xxlarge;
+}
+// --------------------------------------- \\
+// margin Right
+// --------------------------------------- \\
+.margin-right-xsmall {
+  margin-right: $spacer-xsmall;
+}
+
+.margin-right-small {
+  margin-right: $spacer-small;
+}
+
+.margin-right-medium {
+  margin-right: $spacer-medium;
+}
+
+.margin-right-large {
+  margin-right: $spacer-large;
+}
+
+.margin-right-xlarge {
+  margin-right: $spacer-xlarge;
+}
+
+.margin-right-xxlarge {
+  margin-right: $spacer-xxlarge;
+}
+// --------------------------------- \\
+// Paddings
+// --------------------------------- \\
+
+.padding-none {
+  padding: 0 !important;
+}
+
+// --------------------------------- \\
+// Padding
+// --------------------------------- \\
+
+.padding-xsmall {
+  padding: $spacer-xsmall;
+}
+
+.padding-small {
+  padding: $spacer-small;
+}
+
+.padding-medium {
+  padding: $spacer-medium;
+}
+
+.padding-large {
+  padding: $spacer-large;
+}
+
+.padding-xlarge {
+  padding: $spacer-xlarge;
+}
+
+.padding-xxlarge {
+  padding: $spacer-xxlarge;
+}
+
+
+// --------------------------------------- \\
+// Padding Y
+// --------------------------------------- \\
+.padding-x-xsmall {
+  padding-left: $spacer-xsmall;
+  padding-right: $spacer-xsmall;
+}
+
+.padding-x-small {
+  padding-left: $spacer-small;
+  padding-right: $spacer-small;
+}
+
+.padding-x-medium {
+  padding-left: $spacer-medium;
+  padding-right: $spacer-medium;
+}
+
+.padding-x-large {
+  padding-left: $spacer-large;
+  padding-right: $spacer-large;
+}
+
+.padding-x-xlarge {
+  padding-left: $spacer-xlarge;
+  padding-right: $spacer-xlarge;
+}
+
+.padding-x-xxlarge {
+  padding-left: $spacer-xxlarge;
+  padding-right: $spacer-xxlarge;
+}
+// --------------------------------------- \\
+// Padding Y
+// --------------------------------------- \\
+.padding-y-xsmall {
+  padding-top: $spacer-xsmall;
+  padding-bottom: $spacer-xsmall;
+}
+
+.padding-y-small {
+  padding-top: $spacer-small;
+  padding-bottom: $spacer-small;
+}
+
+.padding-y-medium {
+  padding-top: $spacer-medium;
+  padding-bottom: $spacer-medium;
+}
+
+.padding-y-large {
+  padding-top: $spacer-large;
+  padding-bottom: $spacer-large;
+}
+
+.padding-y-xlarge {
+  padding-top: $spacer-xlarge;
+  padding-bottom: $spacer-xlarge;
+}
+
+.padding-y-xxlarge {
+  padding-top: $spacer-xxlarge;
+  padding-bottom: $spacer-xxlarge;
+}
+// --------------------------------------- \\
+// Padding Top
+// --------------------------------------- \\
+.padding-top-xsmall {
+  padding-top: $spacer-xsmall;
+}
+
+.padding-top-small {
+  padding-top: $spacer-small;
+}
+
+.padding-top-medium {
+  padding-top: $spacer-medium;
+}
+
+.padding-top-large {
+  padding-top: $spacer-large;
+}
+
+.padding-top-xlarge {
+  padding-top: $spacer-xlarge;
+}
+
+.padding-top-xxlarge {
+  padding-top: $spacer-xxlarge;
+}
+// --------------------------------------- \\
+// Padding Bottom
+// --------------------------------------- \\
+.padding-bottom-xsmall {
+  padding-bottom: $spacer-xsmall;
+}
+
+.padding-bottom-small {
+  padding-bottom: $spacer-small;
+}
+
+.padding-bottom-medium {
+  padding-bottom: $spacer-medium;
+}
+
+.padding-bottom-large {
+  padding-bottom: $spacer-large;
+}
+
+.padding-bottom-xlarge {
+  padding-bottom: $spacer-xlarge;
+}
+
+.padding-bottom-xxlarge {
+  padding-bottom: $spacer-xxlarge;
+}
+// --------------------------------------- \\
+// Padding Left
+// --------------------------------------- \\
+.padding-left-xsmall {
+  padding-bottom: $spacer-xsmall;
+}
+
+.padding-left-small {
+  padding-bottom: $spacer-small;
+}
+
+.padding-left-medium {
+  padding-bottom: $spacer-medium;
+}
+
+.padding-left-large {
+  padding-bottom: $spacer-large;
+}
+
+.padding-left-xlarge {
+  padding-bottom: $spacer-xlarge;
+}
+
+.padding-left-xxlarge {
+  padding-bottom: $spacer-xxlarge;
+}
+// --------------------------------------- \\
+// Padding Right
+// --------------------------------------- \\
+.padding-right-xsmall {
+  padding-right: $spacer-xsmall;
+}
+
+.padding-right-small {
+  padding-right: $spacer-small;
+}
+
+.padding-right-medium {
+  padding-right: $spacer-medium;
+}
+
+.padding-right-large {
+  padding-right: $spacer-large;
+}
+
+.padding-right-xlarge {
+  padding-right: $spacer-xlarge;
+}
+
+.padding-right-xxlarge {
+  padding-right: $spacer-xxlarge;
+}

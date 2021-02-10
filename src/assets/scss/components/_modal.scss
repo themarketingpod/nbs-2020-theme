@@ -1,0 +1,45 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -52%);
+  background-color: $colour-white;
+  border-radius: 8px;
+  box-shadow: 0 1.6rem 3.2rem rgba($colour-black, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 9999;
+
+  @include transition(all, 0.3s, ease);
+
+  &.is-active {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__inner {
+    position: relative;
+    min-width: 600px;
+    padding: 7rem 3.2rem 3.2rem;
+
+    .button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+      width: 44px;
+      height: 44px;
+      color: $colour-white;
+      background-color: $theme-blue;
+      border: none;
+      border-radius: 50%;
+
+      &:hover {
+        background-color: darken($theme-blue, 10) !important;
+      }
+    }
+  }
+}
