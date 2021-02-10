@@ -1,0 +1,38 @@
+// --------------------------------- \\
+// Containers
+// --------------------------------- \\
+
+.container {
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: $container-max-width-small;
+  margin: auto;
+  padding: $container-padding-small;
+
+  @include breakpoint(medium) {
+      max-width: $container-max-width-medium;
+  }
+
+  @include breakpoint(large) {
+      max-width: $container-max-width-large;
+  }
+
+  @include breakpoint(xlarge) {
+      max-width: $container-max-width-xlarge !important;
+  }
+}
+
+// --------------------------------- \\
+// Grid BG
+// --------------------------------- \\
+
+.has-grid-bg {
+  padding: 100px 30px;
+  background-image: url(../../assets/img/blueprint-grid-bg.png);
+  // background-size: 64px;
+  border: solid 2px $colour-white;
+  border-width: 0 2px;
+}
+
+// --------------------------------- \\

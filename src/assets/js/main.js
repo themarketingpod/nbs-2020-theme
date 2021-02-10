@@ -132,3 +132,66 @@
   });
 
 })();
+
+const body = document.getElementsByTagName('body')[0];
+const responsiveMenuToggle = document.getElementById('toggle-nav');
+const headerNav = document.getElementById('header-nav');
+
+const handleResponsiveMenu = function() {
+  if(headerNav.classList.contains('active')) {
+    headerNav.classList.remove('active');
+  } else {
+    headerNav.classList.add('active');
+  }
+
+  if(body.classList.contains('no-scroll')) {
+    body.classList.remove('no-scroll');
+  } else {
+    body.classList.add('no-scroll');
+  }
+
+  if(responsiveMenuToggle.classList.contains('is-active')) {
+    responsiveMenuToggle.classList.remove('is-active');
+  } else {
+    responsiveMenuToggle.classList.add('is-active');
+  }
+}
+
+responsiveMenuToggle.addEventListener('click', handleResponsiveMenu);
+
+const handleResponsiveClickToggle = function(event) {
+  event.preventDefault();
+
+  let parentItem = this.parentNode;
+  if(parentItem.classList.contains('active')) {
+    parentItem.classList.remove('active');
+  } else {
+    parentItem.classList.add('active');
+  }
+}
+
+// Get responsive Toggles
+const getResponsiveSubToggles = function() {
+  let currentWindowWidth = window.innerWidth;
+  let responsiveSubToggles = document.querySelectorAll('.has-sub > a');
+
+  if ( currentWindowWidth < 1200 ) {
+    
+    responsiveSubToggles.forEach(function(toggle) {
+      toggle.addEventListener('click', handleResponsiveClickToggle);
+    });
+  } else {
+    responsiveSubToggles.forEach(function(toggle) {
+      toggle.removeEventListener('click', handleResponsiveClickToggle);
+    });
+  }
+}
+
+let currenTimeout;
+const onResize = function(e) {
+  clearTimeout(currenTimeout);
+  currentTimeout = setTimeout(getResponsiveSubToggles, 1000);
+}
+
+window.addEventListener('resize', onResize);
+getResponsiveSubToggles();

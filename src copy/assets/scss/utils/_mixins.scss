@@ -1,0 +1,67 @@
+// --------------------------------- \\
+// Breakpoints
+// --------------------------------- \\
+
+$breakpoints: (
+    'tiny':   ( max-width:  400px ),
+    'small':  ( min-width:  667px ),
+    'medium': ( min-width:  768px ),
+    'large':  ( min-width: 1024px ),
+    'xlarge': ( min-width: 1280px ),
+    'xxlarge': ( min-width: 1600px ),
+    'custom': ( min-height:  400px )
+);
+   
+@mixin breakpoint($name) {
+    @if map-has-key($breakpoints, $name) {
+        @media #{inspect(map-get($breakpoints, $name))} {
+            @content;
+        }
+    }
+    @else {
+        @warn "Couldn't find a breakpoint named `#{$name}`.";
+    }
+}
+
+// --------------------------------- \\
+// Font Size
+// --------------------------------- \\
+
+@function calculateRem($size) {
+
+    $remSize: $size / 16px;
+    @return $remSize * 1.6rem;
+
+}
+  
+@mixin font-size($size) {
+
+    font-size: $size;
+    font-size: calculateRem($size);
+
+}
+
+
+// --------------------------------- \\
+// Transitions
+// --------------------------------- \\
+
+@mixin transition($transition-property, $transition-time, $method) {
+    -webkit-transition: $transition-property $transition-time $method;
+       -moz-transition: $transition-property $transition-time $method;
+        -ms-transition: $transition-property $transition-time $method;
+         -o-transition: $transition-property $transition-time $method;
+            transition: $transition-property $transition-time $method;
+}
+
+// --------------------------------- \\
+// Absolute Position
+// --------------------------------- \\
+
+@mixin absolute-position ($top: auto, $right: auto, $bottom: auto, $left: auto) {
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+    position: absolute;
+}

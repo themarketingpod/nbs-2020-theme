@@ -1,0 +1,37 @@
+[ {
+  "id" : "8d14d44d-f23d-b7e3-ee2e-c386bb83bf4a",
+  "name" : "hero_title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "63c0dfb3-5335-8af6-e585-f60646df6c49",
+  "name" : "hero_sub_title",
+  "label" : "Sub Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "52c1c676-9809-1e85-2224-3ca56fbdcb91",
+  "name" : "hero_background_image",
+  "label" : "Background Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+} ]

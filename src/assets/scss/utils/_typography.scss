@@ -3,7 +3,7 @@
 // 1. Font Imports
 // ------------------------------------ \\
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
 // ------------------------------------ \\
 // 2. Base Font Sizes
@@ -15,7 +15,7 @@ html {
 
 body {
   color: $body-color;
-  font-family: $body-font;
+  font-family: $body-font !important;
   font-weight: $body-font-weight;
   line-height: $body-line-height;
 
@@ -32,8 +32,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $heading-font;
-  font-weight: 300;
+  font-family: $heading-font !important;
   line-height: $heading-line-height;
 }
 
@@ -59,6 +58,7 @@ h4 {
 
 p {
   margin: 0 0 $spacer-small;
+  font-family: $body-font !important;
 }
 
 // ------------------------------------ \\

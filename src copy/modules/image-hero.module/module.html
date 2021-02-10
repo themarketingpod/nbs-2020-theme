@@ -1,0 +1,10 @@
+<section id="banner" class="short contained" style="background-image: url({{ module.hero_background_image.src }})">
+  <div class="container">
+    <div class="main__content banner__content">
+      <h1 class="banner__heading margin-none">{% inline_text field="hero_title" value="{{ module.hero_title }}" no_wrapper="true" %}</h1>
+      <p class="banner__sub">
+        {% inline_text field="hero_sub_title" value="{{ module.hero_sub_title }}" no_wrapper="true" %}
+      </p>
+    </div>
+  </div>
+</section>

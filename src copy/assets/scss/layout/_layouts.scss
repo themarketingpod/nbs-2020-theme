@@ -1,0 +1,27 @@
+.w-50 {
+  width: 50%;
+
+  &--lg {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%;
+
+    @include breakpoint(large) {
+      flex: 0 0 50%;
+      width: 50%;
+      max-width: 50%;
+    }
+  }
+}
+
+.w-75 {
+  flex: 0 0 75%;
+  width: 75%;
+  max-width: 75%;
+}
+
+.w-100 {
+  flex: 0 0 100%;
+  width: 100%;
+  max-width: 100%;
+}
