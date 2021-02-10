@@ -1,0 +1,25 @@
+
+$colours : (
+  'theme-blue': $theme-blue,
+  'theme-green': $theme-green,
+  'theme-orange': $theme-orange,
+  'theme-yellow': $theme-yellow,
+  'grey-lightest': $colour-grey-lightest,
+  'grey-light': $colour-grey-light,
+  'grey-dark': $colour-grey-dark,
+  'grey-darkest': $colour-grey-darkest,
+  'white': $colour-white,
+  'black': $colour-black
+);
+
+@each $color, $value in $colours {
+  .is-text-#{$color} {
+      color: $value !important;
+  }
+}
+
+@each $color, $value in $colours {
+  .has-bg-#{$color} {
+      background-color: $value !important;
+  }
+}

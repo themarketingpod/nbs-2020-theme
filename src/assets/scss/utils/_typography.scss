@@ -1,0 +1,122 @@
+
+// ------------------------------------ \\
+// 1. Font Imports
+// ------------------------------------ \\
+
+// @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+// ------------------------------------ \\
+// 2. Base Font Sizes
+// ------------------------------------ \\
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: $body-color;
+  font-family: $body-font !important;
+  font-weight: $body-font-weight;
+  line-height: $body-line-height;
+
+  @include font-size($font-size-regular);
+}
+
+// ------------------------------------ \\
+// 3. Headings
+// ------------------------------------ \\
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font !important;
+  line-height: $heading-line-height;
+}
+
+h1 {
+  @include font-size($font-size-xlarge);
+}
+
+h2 {
+  @include font-size($font-size-large);
+}
+
+h3 {
+  @include font-size($font-size-medium);
+}
+
+h4 {
+  @include font-size($font-size-regular);
+}
+
+// ------------------------------------ \\
+// 4. Parapgraphs
+// ------------------------------------ \\
+
+p {
+  margin: 0 0 $spacer-small;
+  font-family: $body-font !important;
+}
+
+// ------------------------------------ \\
+// 5. Alignment
+// ------------------------------------ \\
+
+.is-text-center {
+  text-align: center;
+}
+
+// ------------------------------------ \\
+// 6. Font Sizes
+// ------------------------------------ \\
+
+.font-size-m {
+  @include font-size($font-size-medium);
+}
+
+.font-size-l {
+  @include font-size($font-size-large);
+}
+
+.font-size-xl {
+  @include font-size($font-size-xlarge);
+}
+
+.font-size-xxl {
+  @include font-size($font-size-xxlarge);
+}
+
+// ------------------------------------ \\
+// 7. Font Weights
+// ------------------------------------ \\
+
+.is-weight-300 {
+  font-weight: 300;
+}
+
+.is-weight-400 {
+  font-weight: 400;
+}
+
+.is-weight-500 {
+  font-weight: 500;
+}
+
+.is-weight-600 {
+  font-weight: 600;
+}
+
+.is-weight-700 {
+  font-weight: 700;
+}
+
+.is-weight-800 {
+  font-weight: 800;
+}
+
+.is-weight-900 {
+  font-weight: 900;
+}
