@@ -19,7 +19,7 @@
   }
 
   @include breakpoint(xlarge) {
-      max-width: $container-max-width-xlarge !important;
+      max-width: $container-max-width-xlarge;
   }
 }
 
