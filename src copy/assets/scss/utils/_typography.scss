@@ -15,7 +15,7 @@ html {
 
 body {
   color: $body-color;
-  font-family: $body-font i !important;
+  font-family: $body-font !important;
   font-weight: $body-font-weight;
   line-height: $body-line-height;
 
@@ -58,6 +58,7 @@ h4 {
 
 p {
   margin: 0 0 $spacer-small;
+  font-family: $body-font !important;
 }
 
 // ------------------------------------ \\
