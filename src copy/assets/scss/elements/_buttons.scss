@@ -1,49 +1,5 @@
-.button,
-a.button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 56px;
-  padding: $spacer-small $spacer-medium;
-  color: $colour-white;
-  text-decoration: none;
-  border-radius: 0.4rem;
-
-  &--primary {
-    background-color: $theme-green;
-
-    &:hover {
-      background-color: darken($theme-green, 10);
-    }
-  }
-
-  &--secondary {
-    background-color: $theme-orange;
-
-    &:hover {
-      background-color: darken($theme-orange, 10);
-    }
-  }
-
-  &--outline {
-    color: $theme-green;
-    background-color: transparent;
-    border: solid 2px $theme-green;
-
-    &:hover {
-      color: $colour-white;
-      background-color: $theme-green;
-    }
-  }
-
-  &.has-icon {
-    i {
-      margin-right: $spacer-small;
-    }
-  }
-
-  &.is-disabled {
-    opacity: 0.3;
-    pointer-events: none;
+.btn {
+  &:hover {
+    color: #fff !important;
   }
 }
