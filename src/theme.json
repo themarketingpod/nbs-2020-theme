@@ -1,6 +1,6 @@
 {
   "label": "NBS 2020 Theme",
-  "preview_path": "./templates/home.html",
+  "preview_path": "./templates/landing-template-1.html",
   "screenshot_path": "./images/template-previews/home.png",
   "enable_domain_stylesheets": false,
   "license": "./license.txt",
