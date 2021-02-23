@@ -1,0 +1,18 @@
+{% if module.styling.button_alignment == 'left' %}
+  {% set alignmentClass = 'is-left' %}
+{% elif module.styling.button_alignment == 'center' %}
+  {% set alignmentClass = 'is-center' %}
+{% elif module.styling.button_alignment == 'right' %}
+  {% set alignmentClass = 'is-right' %}
+{% endif %}
+
+{% set buttonWidthClass = '' %}
+{% if module.styling.button_full_width %}
+	{% set buttonWidthClass = 'is-full-width' %}
+{% endif %}
+
+<div class="module module--document-button {{ alignmentClass }} {{ buttonWidthClass }}">
+  <a class="btn btn--blue" href="{% inline_text field="button.document_url" value="{{ module.button.document_url }}" no_wrapper="true" %}" target="_blank" download>
+    {% inline_text field="button.button_text" value="{{ module.button.button_text }}" no_wrapper="true" %}
+  </a>
+</div>
