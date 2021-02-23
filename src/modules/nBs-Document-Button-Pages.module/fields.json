@@ -1,0 +1,68 @@
+[ {
+  "id" : "d9c1f29b-f8bb-c350-26c3-12a56419c39e",
+  "name" : "button",
+  "label" : "Button",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "6141b7b4-b396-f32f-4955-cac8e6d7a73c",
+    "name" : "document_url",
+    "label" : "Document URL",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "2ebf9eaa-6959-765f-84b0-0aeab4bfd098",
+    "name" : "button_text",
+    "label" : "Button Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Enter text for button"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "button_text" : "Enter text for button"
+  }
+}, {
+  "id" : "6bfc485b-ef5c-64ed-8cc8-7c39a8b49b9e",
+  "name" : "styling",
+  "label" : "Styling",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "5475150f-8ad5-2ed0-d114-723390d22c93",
+    "name" : "button_alignment",
+    "label" : "Button Alignment",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "left", "Left" ], [ "center", "Centre" ], [ "right", "Right" ] ],
+    "type" : "choice",
+    "default" : "left"
+  }, {
+    "id" : "2faa79a0-9acc-6ba9-8c92-344c82ceb65c",
+    "name" : "button_full_width",
+    "label" : "Full Width Button",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : false
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "button_alignment" : "left",
+    "button_full_width" : false
+  }
+} ]
